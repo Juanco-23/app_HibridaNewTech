@@ -7,9 +7,20 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+//Componentes
+import {LoginUserComponent} from './login-user/login-user.component';
+import {CameraComponent} from './camera/camera.component';
+import {GalleryComponent} from './gallery/gallery.component';
+import {TabsPage} from './tabs/tabs.page';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(),
+    AppRoutingModule,
+    LoginUserComponent,
+    CameraComponent,
+    GalleryComponent,
+    TabsPage,],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
