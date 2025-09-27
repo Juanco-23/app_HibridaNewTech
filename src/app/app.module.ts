@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {LoginUserComponent} from './login-user/login-user.component';
 import {CameraComponent} from './camera/camera.component';
 import {GalleryComponent} from './gallery/gallery.component';
+import {HomePageRoutingModule} from './home/home-routing.module';
 import {TabsPage} from './tabs/tabs.page';
 
 @NgModule({
@@ -20,7 +21,8 @@ import {TabsPage} from './tabs/tabs.page';
     LoginUserComponent,
     CameraComponent,
     GalleryComponent,
-    TabsPage,],
+    TabsPage,
+    HomePageRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

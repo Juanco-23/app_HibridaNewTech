@@ -9,6 +9,7 @@ import {photo} from "src/app/services/photo";
   selector: 'app-camera',
   templateUrl: './camera.component.html',
   styleUrls: ['./camera.component.scss'],
+  standalone: true,
   imports: [IonicModule, CommonModule],
 })
 export class CameraComponent  implements OnInit {

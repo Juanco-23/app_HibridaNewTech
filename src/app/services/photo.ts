@@ -45,18 +45,18 @@ export class photo {
       //Variate del tipo de foto con su identificador
       resultType: CameraResultType.Uri,
       //Fuente
-      source: CameraSource.Camera,
+      source: CameraSource.Prompt,
       //Calidad
       quality: 100,
     });
 
     //proceso para acomodar las fotos en la galeria desde el comomienzo con unshift
-
+/*
     this.fotos_G.unshift({
       filePath: "Foto",
       webviewPath: capturar_foto.webPath!
     })
-
+*/
     //proceso para guardar las fotos en la galeria desde el comomienzo con unshift  
     const savedImageFile = await this.savePicture(capturar_foto)
     this.fotos_G.unshift(savedImageFile);

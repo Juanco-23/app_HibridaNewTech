@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 // Importacion de Componentes 
 import {CameraComponent} from '../app/camera/camera.component';
 import {GalleryComponent} from '../app/gallery/gallery.component';
+import {HomePage} from '../app/home/home.page';
 import {LoginUserComponent} from '../app/login-user/login-user.component';
 import { TabsPage } from './tabs/tabs.page';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   
   //Componentes fuera de los tabs
         {path: 'login_User', component: LoginUserComponent},
+        {path: 'home', component: HomePage},
 
   
   // Tabs de la camara
