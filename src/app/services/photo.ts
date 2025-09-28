@@ -45,7 +45,7 @@ export class photo {
       //Variate del tipo de foto con su identificador
       resultType: CameraResultType.Uri,
       //Fuente
-      source: CameraSource.Prompt,
+      source: CameraSource.Camera,
       //Calidad
       quality: 100,
     });
